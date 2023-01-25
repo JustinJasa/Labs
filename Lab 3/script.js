@@ -15,6 +15,7 @@ form.addEventListener("submit", (e) => {
   checkInputs(e);
 });
 
+// checks the inputs
 function checkInputs(e) {
   let errors = [];
   let emailValue = email.value.trim();
@@ -48,6 +49,7 @@ function checkInputs(e) {
   }
 }
 
+// validate the email string
 function validateEmail(emailValue) {
     return String(emailValue)
       .toLowerCase()

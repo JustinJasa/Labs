@@ -6,15 +6,18 @@ let result = document.getElementById("result");
 let input1 = document.getElementById("operand1");
 let input2 = document.getElementById("operand2");
 
+
+// onChange the operand
 function onChange(operand, text) {
   operand = operations.value;
   text = operations.options[operations.selectedIndex].text;
-  console.log(operand);
-  console.log(text);
 }
 
+// call onChange on the operand button
 operations.onchange = onChange;
 
+
+// calculator listens for submit, if and check if statements against the operand
 calculator.addEventListener("submit", (e) => {
   e.preventDefault();
   let compute;

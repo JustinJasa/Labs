@@ -6,6 +6,8 @@ forms.forEach((form) => {
   form.classList.add("hidden");
 });
 
+// adds event listeners for the a tab is clicked
+// when click remove the hidden class from tab
 headings.forEach((heading, index) => {
   heading.addEventListener("click", () => {
     forms.forEach((form) => {
